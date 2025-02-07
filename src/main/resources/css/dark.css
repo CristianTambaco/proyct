@@ -1,0 +1,180 @@
+.main-BG {
+    -fx-background-color: #000000FF;
+}
+
+
+.text-field {
+    -fx-background-color: #00000000; /* Fondo transparente */
+    -fx-border-color: radial-gradient(center 50% 50%, radius 100%, #9B80FFFF, #6C5BA6FF, #5A4B98FF, #3D3C7FFF); /* Gradiente adaptado a fondo negro */
+    -fx-border-width: 0.25px;
+    -fx-border-radius: 10px; /* Bordes redondeados */
+    -fx-text-fill: #EDEDEDFF; /* Texto en gris claro para buen contraste */
+    -fx-prompt-text-fill: #888888FF; /* Placeholder en gris medio */
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-transition: all 0.3s ease; /* Transición suave para todos los cambios */
+
+}
+
+.text-field:focused {
+    -fx-border-color: radial-gradient(center 50% 50%, radius 100%, #D3BFFF, #9B80FFFF, #6C5BA6FF, #4A3C8BFF); /* Gradiente más brillante */
+    -fx-border-width: 1px; /* Aumentar grosor del borde al enfocarse */
+    -fx-border-radius: 10px; /* Mantener bordes redondeados */
+    -fx-text-fill: #FFFFFF; /* Texto blanco en estado enfocado */
+    -fx-prompt-text-fill: #AAAAAA; /* Placeholder más claro en estado enfocado */
+    -fx-transition: all 0.3s ease; /* Transición suave para el cambio de borde */
+}
+
+
+/* Estilo base del CheckBox */
+.check-box {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #EDEDED; /* Texto gris claro para contraste */
+    -fx-border-color: #6C5BA6FF; /* Borde adaptado a fondo negro */
+    -fx-border-width: 1px;
+    -fx-background-color: transparent;
+    -fx-border-radius: 5px; /* Bordes redondeados */
+    -fx-padding: 5px;
+    -fx-transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Estilo del CheckBox cuando se pasa el cursor por encima */
+.check-box:hover {
+    -fx-border-color: #8C74DFFF; /* Borde ligeramente más oscuro en hover */
+    -fx-background-color: #1E1E1E; /* Fondo más oscuro para resaltar */
+}
+
+/* Animación para cuando se marca o desmarca */
+.check-box:selected {
+    -fx-transition: all 0.3s ease-in-out; /* Suave transición al marcar/desmarcar */
+    -fx-text-fill: #FFFFFF; /* Texto blanco cuando está seleccionado */
+}
+
+/* Estilo para el cuadro del CheckBox */
+.check-box .box {
+    -fx-border-radius: 5px;
+    -fx-background-color: transparent;
+    -fx-border-color: #6C5BA6FF; /* Borde adaptado al fondo negro */
+    -fx-border-width: 1px;
+    -fx-transition: all 0.3s ease-in-out; /* Transición suave para el cuadro */
+}
+
+/* Estilo del cuadro del CheckBox cuando está marcado */
+.check-box .box:selected {
+    -fx-border-radius: 5px;
+    -fx-background-color: #9B80FFFF; /* Fondo brillante para el checkbox marcado */
+    -fx-border-color: #6D57B5FF; /* Borde ligeramente más oscuro */
+}
+
+
+/* Estilo base del Hyperlink */
+.hyperlink {
+    -fx-font-size: 12px;
+    -fx-text-fill: #5A91DFFF; /* Azul más suave como color base */
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Efecto al pasar el cursor (hover) */
+.hyperlink:hover {
+    -fx-text-fill: #8C74DFFF; /* Morado más oscuro en hover */
+    -fx-underline: true; /* Subrayado solo al hacer hover */
+    -fx-effect: dropshadow(gaussian, rgba(140, 116, 223, 0.4), 4, 0, 1, 1); /* Sombra sutil al pasar el cursor */
+}
+
+/* Efecto al hacer clic (pressed) */
+.hyperlink:pressed {
+    -fx-text-fill: #3D3C7FFF; /* Azul profundo cuando se hace clic */
+    -fx-effect: dropshadow(gaussian, rgba(61, 60, 127, 0.5), 5, 0, 2, 2); /* Sombra más pronunciada al hacer clic */
+}
+
+
+.button {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, #6D57B5FF, #4C4C92FF, #4A3C8BFF, #3973A4FF);
+    -fx-cursor: hand;
+    -fx-text-fill: #FFFFFFFF; /* Blanco para el texto */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: Leelawadee;
+    -fx-transition: all 0.2s ease; /* Transición suave */
+    -fx-border-radius: 8px; /* Bordes redondeados */
+    -fx-background-radius: 8px; /* Fondo redondeado */
+}
+
+/* Hover */
+.button:hover {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, #6952A9FF, #3C478BFF, #46377FFF, #335E92FF);
+    /* Enfocar más el azul y morado */
+    -fx-scale-x: 1.02; /* Leve expansión */
+    -fx-scale-y: 1.02;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 6, 0, 4, 4); /* Sombra más pronunciada en hover */
+}
+
+/* Pressed */
+.button:pressed {
+    -fx-scale-x: 0.96; /* Reducción más notable */
+    -fx-scale-y: 0.96;
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, #53468AFF, #342F71FF, #2F245DFF, #261C4AFF);
+    /* Gradiente más oscuro */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 5, 0, 3, 3); /* Sombra más fuerte */
+}
+
+
+/* Estilo base del ComboBox */
+.combo-box {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, #4A3C8BFF, #2F2B58FF); /* Gradiente oscuro */
+    -fx-border-radius: 10px; /* Bordes redondeados */
+    -fx-border-color: #6D57B5FF;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF; /* Texto blanco */
+    -fx-background-radius: 10px;
+    -fx-cursor: hand;
+    -fx-prompt-text-fill: #888888; /* Placeholder en gris claro */
+    -fx-transition: all 0.3s ease; /* Transiciones suaves */
+}
+
+/* Estilo al pasar el cursor (hover) */
+.combo-box:hover {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, #5A4B98FF, #3C3B8FFF);
+    -fx-border-color: #AC91FFFF;
+    -fx-scale-x: 1.02; /* Ligero agrandamiento */
+    -fx-scale-y: 1.02;
+}
+
+/* Estilo al desplegar el menú */
+.combo-box .list-cell {
+    -fx-background-color: #2C2C2C; /* Fondo oscuro del menú desplegable */
+    -fx-text-fill: #FFFFFF; /* Texto blanco */
+    -fx-border-width: 0;
+}
+
+/* Estilo al seleccionar un elemento */
+.combo-box .list-cell:selected {
+    -fx-background-color: #6D57B5FF; /* Fondo del elemento seleccionado */
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Estilo al presionar el ComboBox */
+.combo-box:pressed {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 100%, #3C3B8FFF, #2A2858FF);
+    -fx-border-color: #4A3C8BFF;
+}
+
+/* Estilo del marcador de selección (flecha) */
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+    -fx-shape: "M0,0 L5,0 L2.5,4 Z"; /* Forma de flecha */
+    -fx-scale-x: 1.2; /* Tamaño de la flecha */
+    -fx-scale-y: 1.2;
+    -fx-fill: #FFFFFF; /* Color de la flecha */
+}
+
+/* Efecto al pasar el cursor por la flecha */
+.combo-box .arrow-button:hover {
+    -fx-fill: #AC91FFFF; /* Brillo en hover */
+}
